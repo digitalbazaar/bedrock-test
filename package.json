@@ -1,0 +1,33 @@
+{
+  "name": "bedrock-test",
+  "version": "0.0.1-0",
+  "description": "Bedrock test",
+  "main": "./lib",
+  "scripts": {
+    "postinstall": "node --preserve-symlinks ./lib/postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-test"
+  },
+  "keywords": [
+    "bedrock test"
+  ],
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "http://digitalbazaar.com"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/bedrock-test/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/bedrock-test",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "bedrock": "^1.0.0"
+  },
+  "directories": {
+    "lib": "./lib"
+  }
+}
