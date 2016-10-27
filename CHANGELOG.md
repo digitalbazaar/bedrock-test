@@ -1,5 +1,10 @@
 # bedrock-test ChangeLog
 
+## 1.1.1 - 2016-10-27
+
+### Fixed
+- Check for existence of `config.protractor`.
+
 ## 1.1.0 - 2016-10-27
 
 ### Added
