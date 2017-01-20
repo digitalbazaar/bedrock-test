@@ -1,5 +1,10 @@
 # bedrock-test ChangeLog
 
+## 1.1.2 - 2017-01-19
+
+### Changed
+- Improve error handling when loading test config.
+
 ## 1.1.1 - 2016-10-27
 
 ### Fixed
