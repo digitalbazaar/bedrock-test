@@ -2,7 +2,7 @@
 
 ## Overview
 
-Bedrock back-end testing uses Mocha while front-end testing uses Protractor.  To run multiple module tests, the protractor test suite object and the mocha test array are both initialized and populated from this module; however, it’s possible to run tests on a single module at a time.
+Bedrock back-end testing uses Mocha while front-end testing uses Protractor.  To run multiple module tests, the protractor test suite object and the mocha test array can both be initialized and populated from this module; however, it’s also possible to run tests on a single module at a time.
 
 ## Requirements
 npm v3+
@@ -13,7 +13,7 @@ For more information on front-end testing, see https://github.com/digitalbazaar/
 ## Mocha Back-End Testing
 The tests for back-end modules are designed to run independent of a full bedrock development environment.  To run tests on a module, only the module needs to be cloned.  The test environment can be built, and tests run, locally.
 
-For more information on Mocha testing, see https://mochajs.org/#getting-started
+For more information on Mocha, see https://mochajs.org/#getting-started
 
 ### Setup
 This section describes the test environment.  A later section will describe the actual tests.
@@ -60,9 +60,14 @@ This section describes an actual test.  Tests use mocha and chai and are found i
 ### Quick Test Example
 The following is an example of a typical test.  This one tests a regular user adding a public key through the bedrock-key addPublicKey API.  
 
-The test does some data preperation at the very beginning, then clears some of the test data between each test.  The general flow for many tests sets up data and identites as needed to perform each test, performs the test, then compares actual results to expected results.
+The test does some data preperation at the very beginning, then clears some of the test data between each test.  The general flow for many tests is similar to this one:
+ 1. Set up data and identites as needed to perform the test.
+ 2. Execute the test.
+ 3. Compare actual results to expected results.
 
-The test preloads data from `mock.data.js` into the database using a helper function:
+Most of the work, and examples below, focuses on step 1: The set-up of the data and identites.
+
+Inside the test, set-up preloads data from `mock.data.js` into the database using a helper function:
 ```
 var mockData = require('./mock.data');
 ```
@@ -71,7 +76,7 @@ var mockData = require('./mock.data');
     helpers.prepareDatabase(mockData, done);
   });
 ```
-This data is often set up to represent different identities with a set of resource roles (permissions).  This example also uses a helper function to create an identity with the permission to add public keys inside `mock.data.js`:
+As is often the case, this data is set up to represent different identities with a particular set of system resource roles (permissions).  Within `mock.data.js`, a helper function is used to create the identity:
 ```
 var mock = {};
 module.exports = mock;
@@ -82,19 +87,36 @@ var userName;
 userName = 'regularUser';
 identities[userName] = {};
 identities[userName].identity = helpers.createIdentity(userName);
+```
+System resource roles are added as part of the identity set-up.  The pair is usually the permission (sysRole) and the resource or resources that the permissions apply to (generateResource):
+```
 identities[userName].identity.sysResourceRole.push({
   sysRole: 'bedrock-key.test',
   generateResource: 'id'
 });
 
 ```
-Inbetween tests, test-specific data is cleared from the database:
+In this case, `'bedrock-key.test'` is a system role that is defined in `test.config.js` to allow the user to access, remove, create, or edit a public key for each resource: 
+```
+roles['bedrock-key.test'] = {
+  id: 'bedrock-key.test',
+  label: 'Key Test Role',
+  comment: 'Role for Test User',
+  sysPermission: [
+    permissions.PUBLIC_KEY_REMOVE.id,
+    permissions.PUBLIC_KEY_ACCESS.id,
+    permissions.PUBLIC_KEY_CREATE.id,
+    permissions.PUBLIC_KEY_EDIT.id
+  ]
+};
+```
+Before each test, or inbetween tests, test-specific data is cleared from the database within the test:
 ```
   beforeEach(function(done) {
     helpers.removeCollection('publicKey', done);
   });
 ```
-Identites can be set up for a group of tests to avoid repetition.  In this case, an identity is set up for a regular user with the associated resource roles:
+Identites can be set up for a group of tests to avoid repetition.  In this case, an identity is set up for a regular user with the associated resource roles.  Several tests will be run using this identity:
 ```
   describe('authenticated as regularUser', () => {
     var mockIdentity = mockData.identities.regularUser;
@@ -106,7 +128,7 @@ Identites can be set up for a group of tests to avoid repetition.  In this case,
       });
     });
 ```
-This test uses the regular user identity to test the API:
+Finally, a test is executed and data checked:
 ```
     it('should add a valid public key with no private key', done => {
       var samplePublicKey = {};
@@ -132,6 +154,7 @@ This test uses the regular user identity to test the API:
       }, done);
     });
 ```
+This test uses the regular user identity to test the API.  The `brKey.addPublicKey` function call will execute the test.  The comparison of expected and actual results is done using the `should` mocha directives.  If successful, the test will continue; If there is a failure, the testing will stop.
 
 ## Authors
 
