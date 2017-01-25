@@ -156,10 +156,6 @@ Finally, a test is executed and data checked:
 ```
 This test uses the regular user identity to test the API.  The `brKey.addPublicKey` function call will execute the test.  The comparison of expected and actual results is done using the `should` mocha directives.  If successful, the test will continue; If there is a failure, the testing will stop.
 
-## Authors
-
-See the [AUTHORS][] file for author contact information.
-
 ## License
 
 Bedrock and all Bedrock modules are:
