@@ -35,6 +35,7 @@ Doing an `npm install` inside the module test directory populates Bedrock module
 
 #### How it Works
 - The test environment for a module is set up and executed within that module's `test` directory.  A test script is set up in the `package.json` file to run the test suite when `npm test` is entered on the command line.
+
   ```js
     "scripts": {
       "test": "node --preserve-symlinks test.js test"
@@ -46,6 +47,7 @@ Doing an `npm install` inside the module test directory populates Bedrock module
  - The module's configuration file, `config.js`, is loaded first, but it's important to note that the last config file will override previous configurations.  For example, in our case `config.test.js` will override `config.js` since the test configuration file is loaded later.
  - `bedrock.events.on(bedrock.test.configure)` is a listener that will execute on bedrock.test.configure, which is set in the `bedrock-test` module.  This will then load `test.config.js`.
 - `test.config.js` sets up the database and creates permission roles.  It also loads up all the test files contained in the `mocha` directory through this line:
+
   ```js
   config.mocha.tests.push(path.join(__dirname, 'mocha'));
   ```
