@@ -134,6 +134,7 @@ describe('authenticated as regularUser', () => {
       done(err);
     });
   });
+});
 ```
 Finally, a test is executed and data checked:
 ```js
