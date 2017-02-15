@@ -1,5 +1,11 @@
 # bedrock-test ChangeLog
 
+## 1.2.0 - 2017-02-15
+
+### Added
+- Add grunt dependencies which allows for `Gruntfile.js` to be easily added
+to test frameworks.
+
 ## 1.1.2 - 2017-01-19
 
 ### Changed
