@@ -22,7 +22,12 @@
     "url": "https://github.com/digitalbazaar/bedrock-test/issues"
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-test",
-  "dependencies": {},
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-shell": "^2.1.0"
+  },
   "peerDependencies": {
     "bedrock": "^1.0.0"
   },
