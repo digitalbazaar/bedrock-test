@@ -3,9 +3,6 @@
   "version": "1.2.1-0",
   "description": "Bedrock test",
   "main": "./lib",
-  "scripts": {
-    "postinstall": "node --preserve-symlinks ./lib/postinstall"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/digitalbazaar/bedrock-test"
