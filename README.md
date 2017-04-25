@@ -48,7 +48,7 @@ Doing an `npm install` inside the module test directory populates Bedrock module
   }
   ```
   This will run the test file `test.js`.
-- `test.js` will load the required modules, including `bedrock-test` and start Bedrock. 
+- `test.js` will load the required modules, including `bedrock-test` and start Bedrock.
 - `index.js` in the module's `./lib` direcotry will be run and any required modules are loaded from the `test/node_modules` directory.
  - The module's configuration file, `config.js`, is loaded first, but it's important to note that the last config file will override previous configurations.  For example, in our case `config.test.js` will override `config.js` since the test configuration file is loaded later.
  - `bedrock.events.on(bedrock.test.configure)` is a listener that will execute on bedrock.test.configure, which is set in the `bedrock-test` module.  This will then load `test.config.js`.
@@ -66,7 +66,7 @@ This section describes an actual test.  Tests use mocha and chai and are found i
 
 ### Quick Test Example
 
-The following is an example of a typical test.  This one tests a regular user adding a public key through the bedrock-key addPublicKey API.  
+The following is an example of a typical test.  This one tests a regular user adding a public key through the bedrock-key addPublicKey API.
 
 The test does some data preperation at the very beginning, then clears some of the test data between each test.  The general flow for many tests is similar to this one:
  1. Set up data and identites as needed to perform the test.
@@ -103,7 +103,7 @@ identities[userName].identity.sysResourceRole.push({
   generateResource: 'id'
 });
 ```
-In this case, `'bedrock-key.test'` is a system role that is defined in `test.config.js` to allow the user to access, remove, create, or edit a public key for each resource: 
+In this case, `'bedrock-key.test'` is a system role that is defined in `test.config.js` to allow the user to access, remove, create, or edit a public key for each resource:
 ```js
 roles['bedrock-key.test'] = {
   id: 'bedrock-key.test',
