@@ -1,10 +1,13 @@
 # bedrock-test ChangeLog
 
-## 2.1.0 - TBD
+## 2.1.0 - 2018-09-18
 
 ### Added
 - `helpers.createHttpSignatureRequest` API for assisting in the creation of
 HTTPSignatures requests.
+
+### Changed
+- Use child logger.
 
 ## 2.0.0 - 2017-09-25
 
