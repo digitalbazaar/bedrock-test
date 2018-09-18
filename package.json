@@ -23,7 +23,10 @@
     "grunt": "~1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-shell": "^2.1.0"
+    "grunt-shell": "^2.1.0",
+    "http-signature-header": "^1.1.1",
+    "jsprim": "^2.0.0",
+    "signature-algorithms": "^1.0.0"
   },
   "peerDependencies": {
     "bedrock": "^1.5.0"
