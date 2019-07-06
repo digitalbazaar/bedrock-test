@@ -26,12 +26,18 @@
     "grunt-shell": "^2.1.0",
     "http-signature-header": "^1.1.1",
     "jsprim": "^2.0.0",
-    "signature-algorithms": "^1.0.0"
+    "signature-algorithms": "^1.0.0",
+    "snyk": "^1.192.3"
   },
   "peerDependencies": {
     "bedrock": "^1.5.0"
   },
   "directories": {
     "lib": "./lib"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
