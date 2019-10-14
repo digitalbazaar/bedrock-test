@@ -2,7 +2,7 @@
   "name": "bedrock-test",
   "version": "2.1.1-0",
   "description": "Bedrock test",
-  "main": "./lib",
+  "main": "lib",
   "repository": {
     "type": "git",
     "url": "https://github.com/digitalbazaar/bedrock-test"
@@ -13,22 +13,29 @@
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
-    "url": "http://digitalbazaar.com"
+    "url": "https://digitalbazaar.com"
   },
   "bugs": {
     "url": "https://github.com/digitalbazaar/bedrock-test/issues"
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-test",
   "dependencies": {
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
     "grunt": "~1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-shell": "^2.1.0"
+    "grunt-shell": "^2.1.0",
+    "mocha": "^6.1.4"
   },
   "peerDependencies": {
-    "bedrock": "^1.5.0"
+    "bedrock": "^2.0.0"
   },
   "directories": {
     "lib": "./lib"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-digitalbazaar": "^2.0.1"
   }
 }
