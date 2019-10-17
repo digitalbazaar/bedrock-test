@@ -1,5 +1,10 @@
 # bedrock-test ChangeLog
 
+## 3.0.0 - 2019-10-17
+
+### Changed
+- **BREAKING**: Remove HTTPSignatures helpers and dependencies.
+
 ## 2.1.0 - 2018-09-18
 
 ### Added
@@ -12,7 +17,7 @@ HTTPSignatures requests.
 ## 2.0.0 - 2017-09-25
 
 ### Changed
-- **BREAKING** removed the postinstall script that was responsible for creating
+- **BREAKING**: Remove the postinstall script that was responsible for creating
 a symlink to the parent module. Use a `file:..` dependency in the package file
 for the test suite. v5.3+ creates a symlink. Earlier versions of npm will
 copy the target module instead which is acceptable when doing CI testing. Keep
