@@ -1,5 +1,11 @@
 # bedrock-test ChangeLog
 
+## 4.0.0 - 2019-10-22
+
+### Changed
+- **BREAKING**: Refactor for use with bedrock@2.
+- Dependencies for the mocha test framework now reside here.
+
 ## 3.0.0 - 2019-10-17
 
 ### Changed
