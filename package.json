@@ -29,7 +29,7 @@
     "mocha": "^6.1.4"
   },
   "peerDependencies": {
-    "bedrock": "^2.0.0"
+    "bedrock": "2.x - 3.x"
   },
   "directories": {
     "lib": "./lib"
