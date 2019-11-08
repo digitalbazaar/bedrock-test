@@ -1,5 +1,7 @@
 # bedrock-test ChangeLog
 
+## 4.0.2 - 2019-11-08
+
 ### Changed
 - Update max bedrock dependency.
 
