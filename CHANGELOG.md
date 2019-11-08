@@ -1,5 +1,7 @@
 # bedrock-test ChangeLog
 
+## 4.0.1 - 2019-11-08
+
 ### Changed
 - Update to latest bedrock events API.
 
