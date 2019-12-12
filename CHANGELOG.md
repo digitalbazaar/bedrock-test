@@ -1,5 +1,10 @@
 # bedrock-test ChangeLog
 
+## 5.0.0 - TBD
+
+### Changed
+- **BREAKING**: Replace deprecated `useColors` mocha option with `color`.
+
 ## 4.0.2 - 2019-11-08
 
 ### Changed
