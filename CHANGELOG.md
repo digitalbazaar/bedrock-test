@@ -1,5 +1,13 @@
 # bedrock-test ChangeLog
 
+## 5.1.0 - 2020-02-04
+
+### Added
+- Export `test` API.
+
+### Fixed
+- Replace deprecated `runOnceAsync` call with `runOnce`.
+
 ## 5.0.0 - 2019-12-12
 
 ### Changed
