@@ -1,5 +1,10 @@
 # bedrock-test ChangeLog
 
+## 5.2.0 - 2020-02-25
+
+## Changed
+- Improve output of errors with circular references in assertNoError helper.
+
 ## 5.1.0 - 2020-02-04
 
 ### Added
