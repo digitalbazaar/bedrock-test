@@ -27,7 +27,7 @@
     "grunt-cli": "^1.2.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-shell": "^2.1.0",
-    "mocha": "^6.1.4"
+    "mocha": "^7.1.1"
   },
   "peerDependencies": {
     "bedrock": "2.x - 3.x"
