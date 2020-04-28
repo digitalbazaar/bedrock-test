@@ -3,6 +3,9 @@
   "version": "5.2.1-0",
   "description": "Bedrock test",
   "main": "lib",
+  "scripts": {
+    "lint": "eslint lib"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/digitalbazaar/bedrock-test"
