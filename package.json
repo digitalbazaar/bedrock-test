@@ -23,14 +23,14 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-test",
   "dependencies": {
-    "chai": "^4.1.0",
+    "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cycle": "^1.0.3",
     "grunt": "~1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-shell": "^2.1.0",
-    "mocha": "^6.1.4"
+    "mocha": "^7.1.2"
   },
   "peerDependencies": {
     "bedrock": "2.x - 3.x"
