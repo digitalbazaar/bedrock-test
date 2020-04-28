@@ -1,8 +1,13 @@
 # bedrock-test ChangeLog
 
+## 5.3.0 - 2020-04-28
+
+### Changed
+- Use mocha@7.
+
 ## 5.2.0 - 2020-02-25
 
-## Changed
+### Changed
 - Improve output of errors with circular references in assertNoError helper.
 
 ## 5.1.0 - 2020-02-04
