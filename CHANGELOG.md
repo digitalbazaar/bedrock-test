@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 5.3.1 - TBD
+## 5.3.1 - 2020-12-04
 
 ### Fixed
 - Fix usage of `logger.debug`.
