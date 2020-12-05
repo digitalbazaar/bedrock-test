@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 5.3.2 - TBD
+## 5.3.2 - 2020-12-05
 
 ### Fixed
 - Fix use of child logger.
