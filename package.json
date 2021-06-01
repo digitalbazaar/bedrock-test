@@ -26,9 +26,9 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cycle": "^1.0.3",
-    "grunt": "~1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-shell": "^2.1.0",
     "mocha": "^7.1.2"
   },
