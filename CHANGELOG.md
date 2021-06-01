@@ -1,8 +1,8 @@
 # bedrock-test ChangeLog
 
-## 5.4.0 - TBD
+## 5.4.0 - 2021-06-01
 
-### Fixed
+### Changed
 - Update `grunt` deps to address [CVE-2020-7729](https://nvd.nist.gov/vuln/detail/CVE-2020-7729).
 
 ## 5.3.2 - 2020-12-05
