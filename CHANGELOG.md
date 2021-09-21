@@ -4,7 +4,7 @@
 
 ### Changed
 - **BREAKING**: Updated to latest mocha (9.x) and grunt-shell (3.x).
-- **BREAKING**: Require bedrock peer dep of 4.x.
+- **BREAKING**: Require bedrock peer dep of 4.4.x.
 
 ## 5.4.0 - 2021-06-01
 
