@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 6.0.0 - 2021-09-xx
+## 6.0.0 - 2021-09-21
 
 ### Changed
 - **BREAKING**: Updated to latest mocha (9.x) and grunt-shell (3.x).
