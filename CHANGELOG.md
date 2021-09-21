@@ -1,5 +1,11 @@
 # bedrock-test ChangeLog
 
+## 6.0.0 - 2021-09-xx
+
+### Changed
+- **BREAKING**: Updated to latest mocha (9.x) and grunt-shell (3.x).
+- **BREAKING**: Require bedrock peer dep of 4.x.
+
 ## 5.4.0 - 2021-06-01
 
 ### Changed
