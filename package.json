@@ -29,11 +29,11 @@
     "grunt": "^1.4.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-shell": "^2.1.0",
-    "mocha": "^7.1.2"
+    "grunt-shell": "^3.0.1",
+    "mocha": "^9.1.1"
   },
   "peerDependencies": {
-    "bedrock": "2.x - 3.x"
+    "bedrock": "^4.4.0"
   },
   "directories": {
     "lib": "./lib"
