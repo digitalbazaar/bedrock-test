@@ -29,7 +29,7 @@
     "grunt": "^1.4.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-shell": "^3.0.1",
+    "grunt-shell": "digitalbazaar/grunt-shell#update-strip-ansi",
     "mocha": "^9.1.1"
   },
   "peerDependencies": {
