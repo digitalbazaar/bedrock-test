@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 6.1.0 - 2022-03-xx
+## 6.1.0 - 2022-03-30
 
 ### Changed
 - Update peer deps:
