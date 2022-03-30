@@ -1,5 +1,13 @@
 # bedrock-test ChangeLog
 
+## 6.1.0 - 2022-03-xx
+
+### Changed
+- Update peer deps:
+  - `bedrock@4.5`.
+- Update internals to use esm style and use `esm.js` to
+  transpile to CommonJS.
+
 ## 6.0.0 - 2021-09-21
 
 ### Changed
