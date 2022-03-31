@@ -1,5 +1,5 @@
 {
-  "name": "bedrock-test",
+  "name": "@bedrock/test",
   "version": "6.1.1-0",
   "type": "module",
   "description": "Bedrock test",
@@ -31,7 +31,7 @@
     "mocha": "^9.1.1"
   },
   "peerDependencies": {
-    "bedrock": "^4.5.0"
+    "@bedrock/core": "^5.0.0"
   },
   "directories": {
     "lib": "./lib"
