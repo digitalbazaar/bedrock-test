@@ -1,15 +1,22 @@
 # `@bedrock/test` ChangeLog
 
+## 7.0.1 - 2022-03-xx
+
+### Fixed
+- Remove deprecated `require` export that should
+  have been removed in `7.0.0`.
+
 ## 7.0.0 - 2022-03-31
 
 ### Changed
 - **BREAKING**: Rename package to `@bedrock/test`.
-- **BREAKING**: Use pure ESM.
+- **BREAKING**: Convert to module (ESM).
 - **BREAKING**: Update peer deps:
   - `@bedrock/core@5`.
 
 ### Removed
 - **BREAKING**: Remove unused grunt dependencies.
+- **BREAKING**: Remove `require` export.
 
 ## 6.1.0 - 2022-03-30
 
