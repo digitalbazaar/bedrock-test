@@ -1,6 +1,6 @@
 # `@bedrock/test` ChangeLog
 
-## 7.0.0 - 2022-03-xx
+## 7.0.0 - 2022-03-31
 
 ### Changed
 - **BREAKING**: Rename package to `@bedrock/test`.
