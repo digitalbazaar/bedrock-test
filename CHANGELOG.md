@@ -3,6 +3,7 @@
 ## 7.0.0 - 2022-03-xx
 
 ### Changed
+- **BREAKING**: Rename package to `@bedrock/test`.
 - **BREAKING**: Use pure ESM.
 - **BREAKING**: Update peer deps:
   - `@bedrock/core@5`.
