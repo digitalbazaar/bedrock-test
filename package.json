@@ -1,8 +1,9 @@
 {
   "name": "bedrock-test",
   "version": "6.1.1-0",
+  "type": "module",
   "description": "Bedrock test",
-  "main": "lib",
+  "main": "./lib/index.js",
   "scripts": {
     "lint": "eslint ."
   },
@@ -27,10 +28,6 @@
     "chai-as-promised": "^7.1.1",
     "cycle": "^1.0.3",
     "esm": "^3.2.25",
-    "grunt": "^1.4.1",
-    "grunt-cli": "^1.4.3",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-shell": "^3.0.1",
     "mocha": "^9.1.1"
   },
   "peerDependencies": {
