@@ -1,5 +1,10 @@
 # `@bedrock/test` ChangeLog
 
+## 7.0.2 - 2022-03-xx
+
+### Fixed
+- Remove unused dep `esm`.
+
 ## 7.0.1 - 2022-03-31
 
 ### Fixed
