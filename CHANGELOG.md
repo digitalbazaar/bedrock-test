@@ -1,4 +1,14 @@
-# bedrock-test ChangeLog
+# `@bedrock/test` ChangeLog
+
+## 7.0.0 - 2022-03-xx
+
+### Changed
+- **BREAKING**: Use pure ESM.
+- **BREAKING**: Update peer deps:
+  - `@bedrock/core@5`.
+
+### Removed
+- **BREAKING**: Remove unused grunt dependencies.
 
 ## 6.1.0 - 2022-03-30
 
