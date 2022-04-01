@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 7.0.4 - 2022-04-xx
+## 7.0.4 - 2022-04-01
 
 ### Fixed
 - Use `jsdoc-to-markdown@7`.
