@@ -1,4 +1,9 @@
-# `@bedrock/test` ChangeLog
+# bedrock-test ChangeLog
+
+## 7.0.4 - 2022-04-xx
+
+### Fixed
+- Use `jsdoc-to-markdown@7`.
 
 ## 7.0.3 - 2022-04-01
 
