@@ -1,6 +1,6 @@
 # `@bedrock/test` ChangeLog
 
-## 7.0.3 - 2022-04-xx
+## 7.0.3 - 2022-04-01
 
 ### Fixed
 - Avoid segfault with dynamic imports from mocha CJS file.
