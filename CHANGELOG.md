@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 7.0.5 - 2022-04-xx
+## 7.0.5 - 2022-04-27
 
 ### Fixed
 - Support non-existence of `email` transport when setting logger config.
