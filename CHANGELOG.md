@@ -1,5 +1,10 @@
 # bedrock-test ChangeLog
 
+## 8.0.0 - 2022-04-xx
+
+### Changed
+- **BREAKING**: Require `@bedrock/core@6` peer dep.
+
 ## 7.0.5 - 2022-04-27
 
 ### Fixed
