@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.0.1 - 2022-04-xx
+## 8.0.1 - 2022-04-28
 
 ### Fixed
 - Use `node:` imports internally.
