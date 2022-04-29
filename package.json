@@ -1,6 +1,6 @@
 {
   "name": "@bedrock/test",
-  "version": "8.0.3-0",
+  "version": "8.0.3",
   "type": "module",
   "description": "Bedrock test",
   "main": "./lib/index.js",
