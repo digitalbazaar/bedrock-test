@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.0.3 - 2022-04-xx
+## 8.0.3 - 2022-04-29
 
 ### Fixed
 - Fix framework filter.
