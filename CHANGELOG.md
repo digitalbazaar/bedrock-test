@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.0.2 - 2022-04-xx
+## 8.0.2 - 2022-04-29
 
 ### Fixed
 - Fix command line option handling.
