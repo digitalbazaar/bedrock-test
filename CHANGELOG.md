@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.0.4 - 2022-xx-xx
+## 8.0.4 - 2022-05-13
 
 ### Fixed
 - Use direct file existence check for `test.config.js`. This fixes buggy logic
