@@ -1,5 +1,12 @@
 # bedrock-test ChangeLog
 
+## 8.1.0 - 2022-xx-xx
+
+### Fixed
+- Use direct file existence check for `test.config.js`. This fixes buggy logic
+  in the error parsing that tries to check if `test.config.js` doesn't exist or
+  if a module it loads doesn't exist.
+
 ## 8.0.3 - 2022-04-29
 
 ### Fixed
