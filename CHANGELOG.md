@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.0.5 - 2022-xx-xx
+## 8.0.5 - 2022-05-13
 
 ### Changed
 - Add `package.json` `files` field.
