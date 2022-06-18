@@ -2,25 +2,27 @@
 
 ## Overview
 
-Bedrock back-end testing uses Mocha while front-end testing uses Protractor.  To run multiple module tests, the protractor test suite object and the mocha test array can both be initialized and populated from this module; however, it’s also possible to run tests on a single module at a time.
+Bedrock back-end testing uses Mocha while front-end testing uses Karma. To
+run multiple module tests, the karma tests and mocha tests can both be
+initialized and populated from this module. However, it's also possible to
+run tests on a single module at a time.
 
 ## Requirements
 
-- npm v3+
+- npm v7+
 
-## Protractor Front-End Testing
+## Mocha Testing
 
-For more information on front-end testing, see https://github.com/digitalbazaar/bedrock-protractor.
-
-## Mocha Back-End Testing
-
-The tests for back-end modules are designed to run independent of a full bedrock development environment.  To run tests on a module, only the module needs to be cloned.  The test environment can be built, and tests run, locally.
+The tests for modules are designed to run independent of a full bedrock
+development environment. To run tests on a module, only the module needs
+to be cloned. The test environment can be built, and tests run, locally.
 
 For more information on Mocha, see https://mochajs.org/#getting-started
 
 ### Setup
 
-This section describes the test environment.  A later section will describe the actual tests.
+This section describes the test environment.  A later section will
+describe the actual tests.
 
 #### Quick Setup Examples
 
@@ -36,11 +38,15 @@ Run the tests from the same location:
 ```
 npm test
 ```
-Doing an `npm install` inside the module test directory populates Bedrock modules in the test directory based on the dependencies contained in `bedrock-module/test/package.json`.
+Doing an `npm install` inside the module test directory populates Bedrock
+modules in the test directory based on the dependencies contained in
+`bedrock-module/test/package.json`.
 
 #### How it Works
 
-- The test environment for a module is set up and executed within that module's `test` directory.  A test script is set up in the `package.json` file to run the test suite when `npm test` is entered on the command line.
+- The test environment for a module is set up and executed within that
+  module's `test` directory.  A test script is set up in the `package.json` file
+  to run the test suite when `npm test` is entered on the command line.
 
   ```js
   "scripts": {
@@ -74,6 +80,8 @@ The test does some data preperation at the very beginning, then clears some of t
  3. Compare actual results to expected results.
 
 Most of the work, and examples below, focuses on step 1: The set-up of the data and identites.
+
+***NOTE: THESE EXAMPLES ARE OLD; bedrock identities have been removed ***
 
 Inside the test, set-up preloads data from `mock.data.js` into the database using a helper function:
 ```js
@@ -163,6 +171,44 @@ it('should add a valid public key with no private key', done => {
 });
 ```
 This test uses the regular user identity to test the API.  The `brKey.addPublicKey` function call will execute the test.  The comparison of expected and actual results is done using the `should` mocha directives.  If successful, the test will continue; If there is a failure, the testing will stop.
+
+### Profiling Tests
+
+How to profile a bedrock test suite:
+
+Make these local modifications to any mocha test file:
+
+```js
+// do not include this in package.json; it will be installed by npx
+import nsolid from 'nsolid';
+
+describe.only('some suite', function() {
+  before(async () => {
+    // wait for nsolid to be ready
+    await delay(5000);
+
+    // start nsolid profile and run for up to 60000ms
+    nsolid.profile(60000);    
+  });
+
+  after(() => {
+    // stop the profile if it hasn't already timed out
+    nsolid.profileEnd();
+  });
+
+  // it(...)
+});
+```
+
+Then run:
+
+```
+npx nsolid-quickstart --npm test
+```
+
+Once the profile completes, your browser should open a page to nsolid's
+UI and you can login using your github ID. Then look under `assets` to
+see the generated profile.
 
 ## License
 
