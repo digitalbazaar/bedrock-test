@@ -186,6 +186,8 @@ describe.only('some suite', function() {
   before(async () => {
     // wait for nsolid to be ready
     await delay(5000);
+    // or without `delay` library
+    // await new Promise(r => setTimeout(r, 5000));
 
     // start nsolid profile and run for up to 60000ms
     nsolid.profile(60000);    
