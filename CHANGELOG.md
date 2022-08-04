@@ -3,7 +3,7 @@
 ## 9.0.0 -
 
 ### Added
-- **BREAKING**: added `engines.node >= 12` to `package.json`
+- **BREAKING**: Added `engines.node >= 14` to `package.json`.
 ### Changed
 - **BREAKING**: Upgraded to mocha 10. [See mocha 10's changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)
 
