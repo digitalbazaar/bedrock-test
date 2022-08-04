@@ -1,5 +1,12 @@
 # bedrock-test ChangeLog
 
+## 9.0.0 -
+
+### Added
+- **BREAKING**: added `engines.node >= 12` to `package.json`
+### Changed
+- **BREAKING**: Upgraded to mocha 10. [See mocha 10's changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)
+
 ## 8.0.5 - 2022-05-13
 
 ### Changed
