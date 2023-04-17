@@ -5,7 +5,7 @@
 ### Added
 - **BREAKING**: Added `engines.node >= 14` to `package.json`.
 ### Changed
-- **BREAKING**: Upgraded to mocha 10. [See mocha 10's changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)
+- **BREAKING**: Upgraded to `mocha@10`. [See the mocha v10 changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md#1000--2022-05-01).
 
 ## 8.0.5 - 2022-05-13
 
