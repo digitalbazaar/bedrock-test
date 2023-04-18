@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 9.0.0 -
+## 8.1.0 - 2023-04-18
 
 ### Changed
 - Upgraded to `mocha@10`. [See the mocha v10 changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md#1000--2022-05-01).
