@@ -37,7 +37,7 @@
     "mocha": "^10.0.0"
   },
   "peerDependencies": {
-    "@bedrock/core": "^6.0.0"
+    "@bedrock/core": "^6.2.0"
   },
   "directories": {
     "lib": "./lib"
