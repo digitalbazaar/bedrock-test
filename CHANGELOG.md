@@ -1,5 +1,15 @@
 # bedrock-test ChangeLog
 
+## 9.0.0 - 2026-04-xx
+
+### Changed
+- **BREAKING**: Use `bedrock.shutdown()` for an orderly exit on success.
+  - The previous behavior was to abruptly shut down an app, even after testing
+    success. Now event handlers will be called while app is shutting down:
+    - `bedrock.stop`
+    - `bedrock.stopped`
+    - `bedrock.exit`
+
 ## 8.3.0 - 2026-04-06
 
 ### Added
