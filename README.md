@@ -214,13 +214,15 @@ see the generated profile.
 
 ## License
 
-Bedrock and all Bedrock modules are:
+[Apache License, Version 2.0](LICENSE) Copyright 2011-2024 Digital Bazaar, Inc.
 
-    Copyright (c) 2011-2017 Digital Bazaar, Inc.
-    All Rights Reserved
+Other Bedrock libraries are available under a non-commercial license for uses
+such as self-study, research, personal projects, or for evaluation purposes.
+See the
+[Bedrock Non-Commercial License v1.0](https://github.com/digitalbazaar/bedrock/blob/main/LICENSES/LicenseRef-Bedrock-NC-1.0.txt)
+for details.
 
-You can use Bedrock for non-commercial purposes such as self-study, research,
-personal projects, or for evaluation purposes. See the [LICENSE][] file for
-details about the included non-commercial license information.
+Commercial licensing and support are available by contacting
+[Digital Bazaar](https://digitalbazaar.com/) <support@digitalbazaar.com>.
 
-[LICENSE]: LICENSE.md
+[LICENSE]: LICENSE
