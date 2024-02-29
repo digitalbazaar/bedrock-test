@@ -190,7 +190,7 @@ describe.only('some suite', function() {
     // await new Promise(r => setTimeout(r, 5000));
 
     // start nsolid profile and run for up to 60000ms
-    nsolid.profile(60000);    
+    nsolid.profile(60000);
   });
 
   after(() => {
