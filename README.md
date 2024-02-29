@@ -55,7 +55,7 @@ modules in the test directory based on the dependencies contained in
   ```
   This will run the test file `test.js`.
 - `test.js` will load the required modules, including `bedrock-test` and start Bedrock.
-- `index.js` in the module's `./lib` direcotry will be run and any required modules are loaded from the `test/node_modules` directory.
+- `index.js` in the module's `./lib` directory will be run and any required modules are loaded from the `test/node_modules` directory.
  - The module's configuration file, `config.js`, is loaded first, but it's important to note that the last config file will override previous configurations.  For example, in our case `config.test.js` will override `config.js` since the test configuration file is loaded later.
  - `bedrock.events.on(bedrock.test.configure)` is a listener that will execute on bedrock.test.configure, which is set in the `bedrock-test` module.  This will then load `test.config.js`.
 - `test.config.js` sets up the database and creates permission roles.  It also loads up all the test files contained in the `mocha` directory through this line:
@@ -74,12 +74,12 @@ This section describes an actual test.  Tests use mocha and chai and are found i
 
 The following is an example of a typical test.  This one tests a regular user adding a public key through the bedrock-key addPublicKey API.
 
-The test does some data preperation at the very beginning, then clears some of the test data between each test.  The general flow for many tests is similar to this one:
- 1. Set up data and identites as needed to perform the test.
+The test does some data preparation at the very beginning, then clears some of the test data between each test.  The general flow for many tests is similar to this one:
+ 1. Set up data and identities as needed to perform the test.
  2. Execute the test.
  3. Compare actual results to expected results.
 
-Most of the work, and examples below, focuses on step 1: The set-up of the data and identites.
+Most of the work, and examples below, focuses on step 1: The set-up of the data and identities.
 
 ***NOTE: THESE EXAMPLES ARE OLD; bedrock identities have been removed ***
 
@@ -125,13 +125,13 @@ roles['bedrock-key.test'] = {
   ]
 };
 ```
-Before each test, or inbetween tests, test-specific data is cleared from the database within the test:
+Before each test, or in-between tests, test-specific data is cleared from the database within the test:
 ```js
 beforeEach(function(done) {
   helpers.removeCollection('publicKey', done);
 });
 ```
-Identites can be set up for a group of tests to avoid repetition.  In this case, an identity is set up for a regular user with the associated resource roles.  Several tests will be run using this identity:
+Identities can be set up for a group of tests to avoid repetition.  In this case, an identity is set up for a regular user with the associated resource roles.  Several tests will be run using this identity:
 ```js
 describe('authenticated as regularUser', () => {
   var mockIdentity = mockData.identities.regularUser;
@@ -209,7 +209,7 @@ npx nsolid-quickstart --npm test
 ```
 
 Once the profile completes, your browser should open a page to nsolid's
-UI and you can login using your github ID. Then look under `assets` to
+UI and you can login using your GitHub ID. Then look under `assets` to
 see the generated profile.
 
 ## License
