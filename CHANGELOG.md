@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.2.0 - 2024-mm-dd
+## 8.2.0 - 2024-02-29
 
 ### Changed
 - Relicense under the Apache-2.0 license.
