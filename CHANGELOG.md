@@ -1,5 +1,10 @@
 # bedrock-test ChangeLog
 
+## 8.3.0 - 2026-03-xx
+
+### Changed
+- Update `engines.node` to `>=18`.
+
 ## 8.2.1 - 2026-03-09
 
 ### Fixed
