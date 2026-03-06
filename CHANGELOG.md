@@ -1,5 +1,13 @@
 # bedrock-test ChangeLog
 
+## 8.3.0 - 2026-03-xx
+
+### Changed
+- Update dependencies.
+  - Use updated minor versions.
+  - Use `mocha@11`.
+- Update `engines.node` to `>=18`.
+
 ## 8.2.0 - 2024-02-29
 
 ### Changed

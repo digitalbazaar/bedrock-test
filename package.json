@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "main": "./lib/index.js",
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "files": [
     "lib/**/*.js"
@@ -31,21 +31,19 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-test",
   "dependencies": {
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.2",
     "cycle": "^1.0.3",
-    "mocha": "^10.0.0"
+    "mocha": "^11.7.5"
   },
   "peerDependencies": {
-    "@bedrock/core": "^6.0.0"
+    "@bedrock/core": "^6.3.0"
   },
   "directories": {
     "lib": "./lib"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-digitalbazaar": "^2.8.0",
-    "eslint-plugin-jsdoc": "^37.9.7",
-    "jsdoc-to-markdown": "^7.1.1"
+    "@digitalbazaar/eslint-config": "^8.0.1",
+    "eslint": "^9.39.3"
   }
 }
