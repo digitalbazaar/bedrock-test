@@ -31,13 +31,13 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-test",
   "dependencies": {
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.2",
     "cycle": "^1.0.3",
-    "mocha": "^10.0.0"
+    "mocha": "^11.7.5"
   },
   "peerDependencies": {
-    "@bedrock/core": "^6.0.0"
+    "@bedrock/core": "^6.3.0"
   },
   "directories": {
     "lib": "./lib"

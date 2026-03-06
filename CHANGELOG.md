@@ -3,6 +3,9 @@
 ## 8.3.0 - 2026-03-xx
 
 ### Changed
+- Update dependencies.
+  - Use updated minor versions.
+  - Use `mocha@11`.
 - Update `engines.node` to `>=18`.
 
 ## 8.2.1 - 2026-03-09
