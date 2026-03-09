@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.2.1 - 2026-xx-xx
+## 8.2.1 - 2026-03-09
 
 ### Fixed
 - Default to `1` in test error `catch` flow.
