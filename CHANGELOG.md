@@ -6,7 +6,9 @@
 - Update dependencies.
   - Use updated minor versions.
   - Use `mocha@11`.
-- Update `engines.node` to `>=18`.
+- Update supported platform.
+  - Update `engines.node` to `>=20`.
+  - Update README requirements section.
 
 ## 8.2.1 - 2026-03-09
 
