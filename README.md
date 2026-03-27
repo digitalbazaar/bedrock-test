@@ -9,7 +9,10 @@ run tests on a single module at a time.
 
 ## Requirements
 
-- npm v7+
+This software requires and supports maintained recent versions of Node.js.
+Updates may remove support for older unmaintained platform versions. Please use
+dependency version lock files and testing to ensure compatibility with this
+software.
 
 ## Mocha Testing
 
