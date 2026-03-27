@@ -1,4 +1,4 @@
-# bedrock-test
+# @bedrock/test
 
 ## Overview
 
@@ -57,10 +57,10 @@ modules in the test directory based on the dependencies contained in
   }
   ```
   This will run the test file `test.js`.
-- `test.js` will load the required modules, including `bedrock-test` and start Bedrock.
+- `test.js` will load the required modules, including `@bedrock/test` and start Bedrock.
 - `index.js` in the module's `./lib` directory will be run and any required modules are loaded from the `test/node_modules` directory.
  - The module's configuration file, `config.js`, is loaded first, but it's important to note that the last config file will override previous configurations.  For example, in our case `config.test.js` will override `config.js` since the test configuration file is loaded later.
- - `bedrock.events.on(bedrock.test.configure)` is a listener that will execute on bedrock.test.configure, which is set in the `bedrock-test` module.  This will then load `test.config.js`.
+ - `bedrock.events.on('bedrock.test.configure')` is a listener that will execute on `bedrock.test.configure`, which is set in the `@bedrock/test` module.  This will then load `test.config.js`.
 - `test.config.js` sets up the database and creates permission roles.  It also loads up all the test files contained in the `mocha` directory through this line:
 
   ```js
