@@ -2,11 +2,15 @@
 
 ## 8.3.0 - 2026-03-xx
 
+### Added
+- Add basic self test.
+
 ### Changed
 - Update dependencies.
   - Use updated minor versions.
   - Use `mocha@11`.
 - Update supported platform.
+  - Test on Node.js >=20.
   - Update `engines.node` to `>=20`.
   - Update README requirements section.
 
