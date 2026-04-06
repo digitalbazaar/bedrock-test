@@ -9,6 +9,11 @@
     - `bedrock.stop`
     - `bedrock.stopped`
     - `bedrock.exit`
+- Upgrade dependencies:
+  - `chai@6`
+  - `chai-as-promised@8`
+- Upgrade dev dependencies:
+  - `c8@11`
 
 ## 8.3.0 - 2026-04-06
 
