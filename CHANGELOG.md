@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 9.0.0 - 2026-04-xx
+## 9.0.0 - 2026-04-06
 
 ### Changed
 - **BREAKING**: Use `bedrock.shutdown()` for an orderly exit on success.
