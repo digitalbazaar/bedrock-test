@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 8.3.0 - 2026-03-xx
+## 8.3.0 - 2026-04-06
 
 ### Added
 - Add basic self test.
