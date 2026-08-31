@@ -7,6 +7,8 @@
   - Set support level Node.js 22.x.
   - Drop Node.js 20.x support.
   - Add Node.js 26.x support.
+- **BREAKING**: Update dependencies.
+  - `mocha@12`
 
 ## 9.0.0 - 2026-04-06
 
