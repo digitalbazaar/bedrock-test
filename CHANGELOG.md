@@ -1,5 +1,13 @@
 # bedrock-test ChangeLog
 
+## 10.0.0 - 2026-xx-xx
+
+### Changed
+- Update supported platforms.
+  - Set support level Node.js 22.x.
+  - Drop Node.js 20.x support.
+  - Add Node.js 26.x support.
+
 ## 9.0.0 - 2026-04-06
 
 ### Changed
