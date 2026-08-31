@@ -9,6 +9,7 @@
   - Add Node.js 26.x support.
 - **BREAKING**: Update dependencies.
   - `mocha@12`
+- Update test dependencies.
 
 ## 9.0.0 - 2026-04-06
 
