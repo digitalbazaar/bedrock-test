@@ -1,6 +1,6 @@
 # bedrock-test ChangeLog
 
-## 10.0.0 - 2026-xx-xx
+## 10.0.0 - 2026-09-02
 
 ### Changed
 - Update supported platforms.
