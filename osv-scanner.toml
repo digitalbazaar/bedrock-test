@@ -1,0 +1,27 @@
+# Addressing vulnerabilities via `mocha`.
+# See https://github.com/mochajs/mocha/issues/5781
+# Some reasons are from the above link.
+
+# serialize-javascript (dev)
+[[IgnoredVulns]]
+id = "GHSA-5c6j-r48x-rmvq"
+reason = """
+Serialize JavaScript is Vulnerable to RCE via RegExp.flags and
+Date.prototype.toISOString()
+"""
+
+# serialize-javascript (dev)
+[[IgnoredVulns]]
+id = "GHSA-qj8w-gfj5-8c6v"
+reason = """
+Dev only dependency. Not likely to cause this "CPU Exhaustion Denial of Service"
+vulnerability locally.
+"""
+
+# diff (dev)
+[[IgnoredVulns]]
+id = "GHSA-73rr-hh4g-fpgx"
+reason = """
+jsdiff has a Denial of Service vulnerability in parsePatch and applyPatch. Only
+used in dev via mocha.
+"""
